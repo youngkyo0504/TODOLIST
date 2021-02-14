@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/3813b792d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="calendar.js" defer></script>
+
+    <script src="form.js" defer></script>
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <div class="whatisyourname hidden">
+      <div class="form_js">
+        <form action="">
+          <div>What is your name?</div>
+          <input type="text" />
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="navigator">
+        <div class="info">
+          <div class="calendar_name"></div>
+          <div class="weather">seoul 25</div>
+        </div>
+        <div class="month_direction">
+          <div class="year_month"></div>
+          <div class="next_right">
+            <div id="left"><i class="fas fa-chevron-left"></i></div>
+            <div id="today">Today</div>
+            <div id="right"><i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+        <div class="day_nameBox">
+          <div class="sun day_name">일</div>
+          <div class="mon day_name">월</div>
+          <div class="tues day_name">화</div>
+          <div class="wedn day_name">수</div>
+          <div class="thur day_name">목</div>
+          <div class="fri day_name">금</div>
+          <div class="sat day_name">토</div>
+        </div>
+      </div>
+      <div class="day_block">
+        <div class="blockline1">
+          <div class="1 box weekend"><div class="viewDays">1</div></div>
+          <div class="2 box"><div class="viewDays">1</div></div>
+          <div class="3 box"><div class="viewDays">1</div></div>
+          <div class="4 box"><div class="viewDays">1</div></div>
+          <div class="5 box"><div class="viewDays">1</div></div>
+          <div class="6 box"><div class="viewDays">1</div></div>
+          <div class="7 box weekend"><div class="viewDays">1</div></div>
+        </div>
+        <div class="blockline2">
+          <div class="8 box weekend"><div class="viewDays">1</div></div>
+          <div class="9 box"><div class="viewDays">1</div></div>
+          <div class="10 box"><div class="viewDays">1</div></div>
+          <div class="11 box"><div class="viewDays">1</div></div>
+          <div class="12 box"><div class="viewDays">1</div></div>
+          <div class="13 box"><div class="viewDays">1</div></div>
+          <div class="14 box weekend"><div class="viewDays">1</div></div>
+        </div>
+        <div class="blockline3">
+          <div class="1 box weekend"><div class="viewDays">1</div></div>
+          <div class="2 box"><div class="viewDays">1</div></div>
+          <div class="3 box"><div class="viewDays">1</div></div>
+          <div class="4 box"><div class="viewDays">1</div></div>
+          <div class="5 box"><div class="viewDays">1</div></div>
+          <div class="6 box"><div class="viewDays">1</div></div>
+          <div class="7 box weekend"><div class="viewDays">1</div></div>
+        </div>
+        <div class="blockline4">
+          <div class="1 box weekend"><div class="viewDays">1</div></div>
+          <div class="2 box"><div class="viewDays">1</div></div>
+          <div class="3 box"><div class="viewDays">1</div></div>
+          <div class="4 box"><div class="viewDays">1</div></div>
+          <div class="5 box"><div class="viewDays">1</div></div>
+          <div class="6 box"><div class="viewDays">1</div></div>
+          <div class="7 box weekend"><div class="viewDays">1</div></div>
+        </div>
+        <div class="blockline5">
+          <div class="1 box weekend"><div class="viewDays">1</div></div>
+          <div class="2 box"><div class="viewDays">1</div></div>
+          <div class="3 box"><div class="viewDays">1</div></div>
+          <div class="4 box"><div class="viewDays">1</div></div>
+          <div class="5 box"><div class="viewDays">1</div></div>
+          <div class="6 box"><div class="viewDays">20</div></div>
+          <div class="7 box weekend"><div class="viewDays">25</div></div>
+        </div>
+        <div class="blockline6 hidden">
+          <div class="1 box weekend"><div class="viewDays">1</div></div>
+          <div class="2 box"><div class="viewDays">1</div></div>
+          <div class="3 box"><div class="viewDays">1</div></div>
+          <div class="4 box"><div class="viewDays">1</div></div>
+          <div class="5 box"><div class="viewDays">1</div></div>
+          <div class="6 box"><div class="viewDays">20</div></div>
+          <div class="7 box weekend"><div class="viewDays">25</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="todo__container hidden">
+      <header class="todo__header">
+        <h1 class="todo__date">2021년 02월 12일</h1>
+      </header>
+      <main class="todo__main">
+        <ul class="todo__lists"></ul>
+        <i class="fas fa-times todo__closeBtn"></i>
+      </main>
+      <footer class="todo__footer">
+        <form class="todo__form" action="">
+          <input class="todo__write" type="text" />
+        </form>
+        <button class="todo__addBtn"><i class="fas fa-plus"></i></button>
+      </footer>
+    </div>
+  </body>
+</html>

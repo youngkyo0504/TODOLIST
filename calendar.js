@@ -69,7 +69,8 @@ function writeDate(firstDay, DaysInMonth, DaysInLastMonth, m, y) {
     }`;
     const pageDate = Number(RealsaveDate);
     const presentLocal = localStorage.getItem(pageDate);
-    if (presentLocal !== null &&i>=firstDay + date - 1) {
+    if (presentLocal !== null && i >= firstDay + date - 1) {
+      console.log(i,firstDay + date - 1)
       viewDays[i].classList.add("presentTodo");
     } else {
       viewDays[i].classList.remove("presentTodo");

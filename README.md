@@ -1,5 +1,6 @@
 # TodoList!
-This is TodoList!! <br/>
+This is TodoList!!
+
 What will you do today? 
 
 write todolist and check it out! 
